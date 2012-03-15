@@ -1,0 +1,7 @@
+Componentes de este proyecto:
+
+Maven: para el manejo del ciclo de construcción del proyecto.
+GWT: Frontend
+Spring: Middleware
+JPA/Hibernate: Persistencia
+Spring Security: Para le manejo de la autenticacion y autorizacion. Ver: http://www.javacodegeeks.com/2010/12/securing-gwt-apps-with-spring-security.html
