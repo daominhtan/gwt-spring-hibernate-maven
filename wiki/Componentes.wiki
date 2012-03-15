@@ -18,3 +18,9 @@ Manejo de excepciones
 
 Paginacion
 
+JTA/Datasource
+
+Cache de 2do nivel de hibernate
+
+
+
