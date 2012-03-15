@@ -1,6 +1,6 @@
 Componentes de este proyecto:
 
-Maven: para el manejo del ciclo de construcción del proyecto.
+Maven: para el manejo del ciclo de construcción y despliegue del proyecto. Esta integrado con un plugin llamado CARGO que permite deployar automaticamente el WAR generado en un TOMCAT e inicializar el mismo. El despliegue se llevara a cabo en la fase de INSTALL de maven.
 
 GWT: Frontend
 
