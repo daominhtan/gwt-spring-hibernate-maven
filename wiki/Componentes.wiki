@@ -25,3 +25,9 @@ Paginacion
 JTA/Datasource
 
 Cache de 2do nivel de hibernate
+
+GWT - MVP & Event Bus 
+
+Ver: http://gwtquickstart.blogspot.com.ar/2010/03/eventbus-and-mvp.html
+
+Ver: http://code.google.com/intl/es-419/webtoolkit/articles/mvp-architecture.html
