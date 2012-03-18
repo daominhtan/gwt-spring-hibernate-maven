@@ -14,6 +14,12 @@ Ver: http://www.javacodegeeks.com/2010/12/securing-gwt-apps-with-spring-security
 
 Ver: http://www.adictosaltrabajo.com/tutoriales/tutoriales.php?pagina=utilizaciondegruposenspringsecurity
 
+Ver: http://code.google.com/p/google-web-toolkit-incubator/wiki/LoginSecurityFAQ
+
+Ver: http://groups.google.com/group/google-web-toolkit/browse_thread/thread/c6dfd91b52eea79a/05ef63f01d7b2b8f?lnk=gst&q=session#05ef
+
+Ver: http://groups.google.com/group/google-web-toolkit/browse_thread/thread/c5ede413a44b3737/b1ee110ccc3b9b1e?lnk=dice
+
 Manejo de CAPTCHA: http://www.javacodegeeks.com/2010/06/add-captcha-gwt-application.html
 
 Transacciones
@@ -33,3 +39,7 @@ Ver: http://gwtquickstart.blogspot.com.ar/2010/03/eventbus-and-mvp.html
 Ver: http://code.google.com/intl/es-419/webtoolkit/articles/mvp-architecture.html
 
 Ver codigo ejemplo: http://code.google.com/p/gwt-eb/source/browse/trunk/src/net/phiz/gwteb#gwteb%253Fstate%253Dclosed
+
+GWT - Mejores practicas
+
+Ver: http://www.google.com/intl/es-419/events/io/2009/sessions/GoogleWebToolkitBestPractices.html
