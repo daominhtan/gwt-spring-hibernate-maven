@@ -43,3 +43,14 @@ Ver codigo ejemplo: http://code.google.com/p/gwt-eb/source/browse/trunk/src/net/
 GWT - Mejores practicas
 
 Ver: http://www.google.com/intl/es-419/events/io/2009/sessions/GoogleWebToolkitBestPractices.html
+
+GWT - mvp4g - GWT is a very powerful framework that allows you to build efficient applications, especially if you follow the best practices described by Ray Ryan at Google IO 2009:
+Ver:http://code.google.com/p/mvp4g/
+
+Event Bus
+
+Dependency Injection
+
+Model View Presenter
+
+Place Service
