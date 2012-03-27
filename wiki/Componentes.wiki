@@ -8,7 +8,7 @@ Spring: Middleware
 
 JPA/Hibernate: Persistencia
 
-Spring Security: Para le manejo de la autenticacion y autorizacion. 
+Spring Security: Para le manejo de la autenticacion y autorizacion.
 
 Ver: http://www.javacodegeeks.com/2010/12/securing-gwt-apps-with-spring-security.html
 
@@ -47,10 +47,12 @@ Ver: http://www.google.com/intl/es-419/events/io/2009/sessions/GoogleWebToolkitB
 GWT - mvp4g - GWT is a very powerful framework that allows you to build efficient applications, especially if you follow the best practices described by Ray Ryan at Google IO 2009:
 Ver:http://code.google.com/p/mvp4g/
 
-Event Bus
+GWT - Event Bus
+
+GWT - Model View Presenter (MVP)
+
+GWT - Manejo del historial
 
 Dependency Injection
-
-Model View Presenter
 
 Place Service
