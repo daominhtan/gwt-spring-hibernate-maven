@@ -4,6 +4,27 @@ Maven: para el manejo del ciclo de construcción y despliegue del proyecto. Esta
 
 GWT: Frontend
 
+GWT - MVP & Event Bus 
+
+Ver: http://gwtquickstart.blogspot.com.ar/2010/03/eventbus-and-mvp.html
+
+Ver: http://code.google.com/intl/es-419/webtoolkit/articles/mvp-architecture.html
+
+Ver codigo ejemplo: http://code.google.com/p/gwt-eb/source/browse/trunk/src/net/phiz/gwteb#gwteb%253Fstate%253Dclosed
+
+GWT - Mejores practicas
+
+Ver: http://www.google.com/intl/es-419/events/io/2009/sessions/GoogleWebToolkitBestPractices.html
+
+GWT - mvp4g - GWT is a very powerful framework that allows you to build efficient applications, especially if you follow the best practices described by Ray Ryan at Google IO 2009:
+Ver:http://code.google.com/p/mvp4g/
+
+GWT - Event Bus (clase HandlerManager)
+
+GWT - Model View Presenter (MVP)
+
+GWT - Manejo del historial (clase History)
+
 Spring: Middleware
 
 JPA/Hibernate: Persistencia
@@ -31,27 +52,6 @@ Paginacion
 JTA/Datasource
 
 Cache de 2do nivel de hibernate
-
-GWT - MVP & Event Bus 
-
-Ver: http://gwtquickstart.blogspot.com.ar/2010/03/eventbus-and-mvp.html
-
-Ver: http://code.google.com/intl/es-419/webtoolkit/articles/mvp-architecture.html
-
-Ver codigo ejemplo: http://code.google.com/p/gwt-eb/source/browse/trunk/src/net/phiz/gwteb#gwteb%253Fstate%253Dclosed
-
-GWT - Mejores practicas
-
-Ver: http://www.google.com/intl/es-419/events/io/2009/sessions/GoogleWebToolkitBestPractices.html
-
-GWT - mvp4g - GWT is a very powerful framework that allows you to build efficient applications, especially if you follow the best practices described by Ray Ryan at Google IO 2009:
-Ver:http://code.google.com/p/mvp4g/
-
-GWT - Event Bus (clase HandlerManager)
-
-GWT - Model View Presenter (MVP)
-
-GWT - Manejo del historial (clase History)
 
 Dependency Injection
 
