@@ -47,11 +47,11 @@ Ver: http://www.google.com/intl/es-419/events/io/2009/sessions/GoogleWebToolkitB
 GWT - mvp4g - GWT is a very powerful framework that allows you to build efficient applications, especially if you follow the best practices described by Ray Ryan at Google IO 2009:
 Ver:http://code.google.com/p/mvp4g/
 
-GWT - Event Bus
+GWT - Event Bus (clase HandlerManager)
 
 GWT - Model View Presenter (MVP)
 
-GWT - Manejo del historial
+GWT - Manejo del historial (clase History)
 
 Dependency Injection
 
