@@ -6,6 +6,8 @@ GWT: Frontend
 
 GWT - MVP & Event Bus 
 
+Ver: https://developers.google.com/web-toolkit/articles/mvp-architecture
+
 Ver: http://gwtquickstart.blogspot.com.ar/2010/03/eventbus-and-mvp.html
 
 Ver: http://code.google.com/intl/es-419/webtoolkit/articles/mvp-architecture.html
