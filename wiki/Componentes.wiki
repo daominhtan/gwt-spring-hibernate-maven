@@ -34,7 +34,7 @@ GWT - Event Bus (clase HandlerManager)
 
 GWT - Model View Presenter (MVP)
 
-GWT - Manejo del historial (clase History)
+GWT - Manejo del historial (clase History). Para esto se tendra una clase llamada AppController que sera la que escuchara los eventos del browser (atrás, adelante)
 
 GWT - TableModel (modelos para las grillas,permitiendo obtener objetos tipados en lugar de strings)
 
