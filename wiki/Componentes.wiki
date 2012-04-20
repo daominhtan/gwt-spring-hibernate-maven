@@ -1,6 +1,14 @@
 Componentes de este proyecto:
 
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+
 Maven: para el manejo del ciclo de construcción y despliegue del proyecto. Esta integrado con un plugin llamado CARGO que permite deployar automaticamente el WAR generado en un TOMCAT e inicializar el mismo. El despliegue se llevara a cabo en la fase de INSTALL de maven.
+
+Utilizar el plugin de CARGO para el deployment sobre el tomcat de forma automática.
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------
 
 GWT: Frontend
 
@@ -18,7 +26,8 @@ GWT - Mejores practicas
 
 Ver: http://www.google.com/intl/es-419/events/io/2009/sessions/GoogleWebToolkitBestPractices.html
 
-GWT - mvp4g - GWT is a very powerful framework that allows you to build efficient applications, especially if you follow the best practices described by Ray Ryan at Google IO 2009:
+GWT - mvp4g 
+
 Ver:http://code.google.com/p/mvp4g/
 
 GWT - Event Bus (clase HandlerManager)
@@ -27,9 +36,12 @@ GWT - Model View Presenter (MVP)
 
 GWT - Manejo del historial (clase History)
 
-Spring: Middleware
+GWT - TableModel (modelos para las grillas,permitiendo obtener objetos tipados en lugar de strings)
 
-JPA/Hibernate: Persistencia
+GWT - SimplListModel (modelo para los combos, permitiendo obtener objetos tipados en lugar de strings)
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------
 
 Spring Security: Para le manejo de la autenticacion y autorizacion.
 
@@ -42,6 +54,21 @@ Ver: http://code.google.com/p/google-web-toolkit-incubator/wiki/LoginSecurityFAQ
 Ver: http://groups.google.com/group/google-web-toolkit/browse_thread/thread/c6dfd91b52eea79a/05ef63f01d7b2b8f?lnk=gst&q=session#05ef
 
 Ver: http://groups.google.com/group/google-web-toolkit/browse_thread/thread/c5ede413a44b3737/b1ee110ccc3b9b1e?lnk=dice
+
+Manejar la seguridad a nivel de permisos en la aplicación y no a nivel de roles. Una buena practica es no harcodear los roles en la aplicación para que estos se puedan dar de alta dinamicamente. 
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+
+Spring: Middleware
+
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+
+
+JPA/Hibernate: Persistencia
+
 
 Manejo de CAPTCHA: http://www.javacodegeeks.com/2010/06/add-captcha-gwt-application.html
 
