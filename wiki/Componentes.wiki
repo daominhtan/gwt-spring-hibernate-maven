@@ -40,6 +40,12 @@ GWT - TableModel (modelos para las grillas,permitiendo obtener objetos tipados e
 
 GWT - SimplListModel (modelo para los combos, permitiendo obtener objetos tipados en lugar de strings)
 
+GWT - Gwt-Dispatch 
+http://code.google.com/p/gwt-dispatch/wiki/GettingStarted
+http://code.google.com/p/gwt-dispatch/wiki/ServerConfigurationWithSpring
+https://github.com/rombert/gwt-dispatch-sample
+http://architects.dzone.com/articles/gwt-architecture-best
+
 ---------------------------------------------------------------------
 ---------------------------------------------------------------------
 
