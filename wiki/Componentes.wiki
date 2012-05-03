@@ -55,6 +55,8 @@ GWT - Armar el popup que se lanze para el error
 
 GWT - Armar el logout con SpringSecurity
 
+GWT - Bloquear los botones luego de hacer un clic, para evitar que vaya N veces a la BD. Y volverlo a habilitar cuando el server de una respuesta.
+
 ---------------------------------------------------------------------
 ---------------------------------------------------------------------
 
