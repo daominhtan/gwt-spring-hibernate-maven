@@ -12,7 +12,11 @@ Utilizar el plugin de CARGO para el deployment sobre el tomcat de forma automát
 
 GWT: Frontend
 
-GWT - MVP & Event Bus 
+GWT - Mejores practicas
+
+Ver: http://www.google.com/intl/es-419/events/io/2009/sessions/GoogleWebToolkitBestPractices.html
+
+GWT - MVP & Event Bus (clase HandlerManager)
 
 Ver: https://developers.google.com/web-toolkit/articles/mvp-architecture
 
@@ -22,17 +26,9 @@ Ver: http://code.google.com/intl/es-419/webtoolkit/articles/mvp-architecture.htm
 
 Ver codigo ejemplo: http://code.google.com/p/gwt-eb/source/browse/trunk/src/net/phiz/gwteb#gwteb%253Fstate%253Dclosed
 
-GWT - Mejores practicas
-
-Ver: http://www.google.com/intl/es-419/events/io/2009/sessions/GoogleWebToolkitBestPractices.html
-
-GWT - mvp4g 
+GWT - mvp4g (no se vio)
 
 Ver:http://code.google.com/p/mvp4g/
-
-GWT - Event Bus (clase HandlerManager)
-
-GWT - Model View Presenter (MVP)
 
 GWT - Manejo del historial (clase History). Para esto se tendra una clase llamada AppController que sera la que escuchara los eventos del browser (atrás, adelante)
 
@@ -40,11 +36,24 @@ GWT - TableModel (modelos para las grillas,permitiendo obtener objetos tipados e
 
 GWT - SimplListModel (modelo para los combos, permitiendo obtener objetos tipados en lugar de strings)
 
-GWT - Gwt-Dispatch 
+GWT - Gwt-Dispatch
+
 http://code.google.com/p/gwt-dispatch/wiki/GettingStarted
 http://code.google.com/p/gwt-dispatch/wiki/ServerConfigurationWithSpring
 https://github.com/rombert/gwt-dispatch-sample
 http://architects.dzone.com/articles/gwt-architecture-best
+
+NOTA: Al final no me convence demasiado ya que no solo que vamos a tener muchas clases para el action (command) y el result sino que tambien no queda claro como manejar la transaccionabilidad, es decir, si en el handler vamos a tener q inyectar el service de spring. Porque la idea es poder utilizar los @Service de Spring.
+
+GWT - FlexTable con paginacion
+
+GWT - Mostrar el usuario logueado en la pantalla
+
+GWT - Armar el HOME con el header y el footer
+
+GWT - Armar el popup que se lanze para el error
+
+GWT - Armar el logout con SpringSecurity
 
 ---------------------------------------------------------------------
 ---------------------------------------------------------------------
