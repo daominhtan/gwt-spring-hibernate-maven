@@ -26,7 +26,7 @@ Ver: http://code.google.com/intl/es-419/webtoolkit/articles/mvp-architecture.htm
 
 Ver codigo ejemplo: http://code.google.com/p/gwt-eb/source/browse/trunk/src/net/phiz/gwteb#gwteb%253Fstate%253Dclosed
 
-GWT - mvp4g (no se vio)
+GWT - mvp4g (no se va a tener en cuenta)
 
 Ver:http://code.google.com/p/mvp4g/
 
@@ -36,7 +36,7 @@ GWT - TableModel (modelos para las grillas,permitiendo obtener objetos tipados e
 
 GWT - SimplListModel (modelo para los combos, permitiendo obtener objetos tipados en lugar de strings)
 
-GWT - Gwt-Dispatch
+GWT - Gwt-Dispatch (no se va a tener en cuenta)
 
 http://code.google.com/p/gwt-dispatch/wiki/GettingStarted
 http://code.google.com/p/gwt-dispatch/wiki/ServerConfigurationWithSpring
