@@ -57,6 +57,9 @@ GWT - Armar el logout con SpringSecurity
 
 GWT - Bloquear los botones luego de hacer un clic, para evitar que vaya N veces a la BD. Y volverlo a habilitar cuando el server de una respuesta.
 
+GWT & Spring security - que sucede si al hacer para atras o adelante desde el browser y la session expiro ?
+http://stackoverflow.com/questions/8957131/keeping-gwt-history-hashes-thru-spring-security-login
+
 ---------------------------------------------------------------------
 ---------------------------------------------------------------------
 
