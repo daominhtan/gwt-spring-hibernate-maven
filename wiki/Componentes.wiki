@@ -32,9 +32,9 @@ Ver:http://code.google.com/p/mvp4g/
 
 GWT - Manejo del historial (clase History). Para esto se tendra una clase llamada AppController que sera la que escuchara los eventos del browser (atrás, adelante)
 
-GWT - TableModel (modelos para las grillas,permitiendo obtener objetos tipados en lugar de strings)
+GWT - TableModel (modelos para las grillas, permitiendo obtener objetos tipados en lugar de Strings)
 
-GWT - SimplListModel (modelo para los combos, permitiendo obtener objetos tipados en lugar de strings)
+GWT - SimplListModel (modelo para los combos, permitiendo obtener objetos tipados en lugar de Strings)
 
 GWT - Gwt-Dispatch (no se va a tener en cuenta)
 
@@ -47,18 +47,20 @@ NOTA: Al final no me convence demasiado ya que no solo que vamos a tener muchas 
 
 GWT - FlexTable con paginacion
 
-GWT - Mostrar el usuario logueado en la pantalla
+GWT - Usuario logueado en el HTML via SpringSecurity
 
-GWT - Armar el HOME con el header y el footer
+GWT - HTML (HOME con el header, el footer, el logout, etc)
 
-GWT - Armar el popup que se lanze para el error
+GWT - Popup generico que se lanze para los errores
 
-GWT - Armar el logout con SpringSecurity
+GWT - Link de logout con SpringSecurity
 
-GWT - Bloquear los botones luego de hacer un clic, para evitar que vaya N veces a la BD. Y volverlo a habilitar cuando el server de una respuesta.
+GWT - Bloqueo de los botones luego de hacer un clic, para evitar que vaya N veces a la BD. Y volverlo a habilitar cuando el server de una respuesta.
 
 GWT & Spring security - que sucede si al hacer para atras o adelante desde el browser y la session expiro ?
 http://stackoverflow.com/questions/8957131/keeping-gwt-history-hashes-thru-spring-security-login
+
+GWT - Extender el AsyncCallback y armar uno generico con los mensajes de error correspondientes
 
 ---------------------------------------------------------------------
 ---------------------------------------------------------------------
