@@ -36,6 +36,9 @@ GWT - Manejo del estado de las paginas: (Place & activities)
 http://stackoverflow.com/questions/4978134/state-management-in-gwt
 http://stackoverflow.com/questions/4401303/preserving-navigation-history-state-in-gwt-with-mvp-pattern
 
+Importante:
+http://stackoverflow.com/questions/5510571/gwt-mvp-with-places-activities-wheres-the-model
+
 
 GWT - TableModel (modelos para las grillas, permitiendo obtener objetos tipados en lugar de Strings)
 
