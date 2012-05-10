@@ -32,18 +32,19 @@ Ver:http://code.google.com/p/mvp4g/
 
 GWT - Manejo del historial (clase History). Para esto se tendra una clase llamada AppController que sera la que escuchara los eventos del browser (atrás, adelante)
 
-GWT - Manejo del historial con estado de las paginas: (Place & activities) => Esto reemplaza al AppController que escucha los eventos del browser.
+GWT - Manejo del historial con estado de las paginas: (Place & activities) => Esto reemplaza al AppController que escucha los eventos del browser. Ademas la clase EventBus reemplaza a la clase HandlerManager.
 
 http://stackoverflow.com/questions/4978134/state-management-in-gwt
 
 http://stackoverflow.com/questions/4401303/preserving-navigation-history-state-in-gwt-with-mvp-pattern
 
-Importante:
 http://stackoverflow.com/questions/5510571/gwt-mvp-with-places-activities-wheres-the-model
+
+Well, there's nothing forcing you to do MVP with GWT 2.1 activities & Places, but it sure settles the basements for MVP: the Activity will be your presenter and the IsWidget you'll give back to the AcceptsOneWidget will be your view.
 
 http://www.bright-creations.com/blog/gwt-2-1-mvp-client-factory-example/
 
-Ejemplo codigo fuente completo (muy util):
+Ejemplo codigo fuente completo (muy util) donde se utliza A&P + MVP + EventBus:
 
 https://bitbucket.org/gardellajuanpablo/gwt-sample/wiki/Home
 
