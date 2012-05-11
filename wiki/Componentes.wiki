@@ -48,6 +48,9 @@ Ejemplo codigo fuente completo (muy util) donde se utliza A&P + MVP + EventBus:
 
 https://bitbucket.org/gardellajuanpablo/gwt-sample/wiki/Home
 
+Problemas con el eventBus en el método start de la actividad:
+http://comments.gmane.org/gmane.org.google.gwt/75197
+
 GWT - TableModel (modelos para las grillas, permitiendo obtener objetos tipados en lugar de Strings)
 
 GWT - SimplListModel (modelo para los combos, permitiendo obtener objetos tipados en lugar de Strings)
@@ -61,7 +64,7 @@ http://architects.dzone.com/articles/gwt-architecture-best
 
 NOTA: Al final no me convence demasiado ya que no solo que vamos a tener muchas clases para el action (command) y el result sino que tambien no queda claro como manejar la transaccionabilidad, es decir, si en el handler vamos a tener q inyectar el service de spring. Porque la idea es poder utilizar los @Service de Spring.
 
-Vi un ejemplo donde a los Handlers para un action y un result lo transforman a un BEAN de Spring para poder inyectarle el servicio y el handler queda como un pasamano a un service. Me parece mucho codigo para una simple llamada a un servicio.
+Vi un ejemplo donde a los Handlers para un action y un result lo transforman a un BEAN de Spring para poder inyectarle el servicio y el handler queda como un pasamano a un service. Me parece mucho codigo para una simple llamada a un servicio. Mucho pasamano.
 
 Ver: https://bitbucket.org/gardellajuanpablo/gwt-sample/wiki/Home 
 
