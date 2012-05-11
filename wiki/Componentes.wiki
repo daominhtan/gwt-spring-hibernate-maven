@@ -34,6 +34,24 @@ GWT - Manejo del historial (clase History). Para esto se tendra una clase llamad
 
 GWT - Manejo del historial con estado de las paginas: (Place & activities) => Esto reemplaza al AppController que escucha los eventos del browser (no lo vamos a tener mas). Ademas la clase HandlerManager es reemplazada por la clase EventBus.
 
+Ver: http://www.bright-creations.com/blog/gwt-2-1-mvp-client-factory-example/
+
+Integrated the new ClientFactory class required to pass the EventBus and PlaceController around. En nuestro caso, casi casi que no la vamos a necesitar ya que las vistas las vamos a pasar por parametro al constructor del Presenter (como lo indica MVP) y el eventBus nos llegara por parametro en el metodo start de cada Presenter/Activity.
+
+ClientFactory can also be used to get references to the views (las vistas la vamos a seguir manteniendo mediante el Display en cada Presenter)
+
+I’ve replaced the HandlerManager with the new EventBus class used in GWT 2.1
+
+I’ve ditched the AppController class for the new GWT 2.1 PlaceController
+
+Presenters are no longer called presenters, instead they use Activities. En nuestro ejemplo, vamos a seguir manteniendo el nombre de Presenter en lugar de Activities, donde cada Presenter extendera de una AbstractActivity
+
+Added the AppActivityMapper and the AppPlaceHistoryMapper classes recommended for GWT 2.1
+
+Created places Ej: ContactPlace which can be used for accessing the url based locations
+
+No longer use events to jump from url to url, now use the PlaceController to go to new Place. Antes utilizamos los eventos para ir de una sitio al otro, ahora solo vamos a invocar a la clase PlaceController. El eventBus lo vamos a dejar solo para registrar los handlers mas orientado al negocio en si.
+
 http://stackoverflow.com/questions/4978134/state-management-in-gwt
 
 http://stackoverflow.com/questions/4401303/preserving-navigation-history-state-in-gwt-with-mvp-pattern
