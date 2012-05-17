@@ -68,6 +68,7 @@ https://bitbucket.org/gardellajuanpablo/gwt-sample/wiki/Home
 
 Problemas con el eventBus en el método start de la actividad:
 http://comments.gmane.org/gmane.org.google.gwt/75197
+Solucion: http://stackoverflow.com/questions/6367576/problem-with-order-of-event-registeringe-sending-receiving-and-activities-plac
 
 GWT - TableModel (modelos para las grillas, permitiendo obtener objetos tipados en lugar de Strings)
 
