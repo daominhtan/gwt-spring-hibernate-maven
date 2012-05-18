@@ -70,6 +70,19 @@ Problemas con el eventBus en el método start de la actividad:
 http://comments.gmane.org/gmane.org.google.gwt/75197
 Solucion: http://stackoverflow.com/questions/6367576/problem-with-order-of-event-registeringe-sending-receiving-and-activities-plac
 
+IMPORTATE: Problemas con el manejo del History: Se ha intentando hacer varias pruebas y para algunos casos funciona correctamente (desde un listado ir a un formulario pasando el ID de la entidad via URL con los places) pero para otros casos no se ha podido encontrale la vuelta (cuando vuelvo al listado, lo ideal seria que me mantegna seleccionado los items del listado como asi tmb los filtros y eso se complica ya que la URL del listado no incluye de entrada las cosas que vos a seleccionar)
+
+Es decir, cuando ingreso al listado la URL es:
+
+http://127.0.0.1:8888/MyGwtMavenSampleApp.html?gwt.codesvr=127.0.0.1:9997#RoleListPlace:
+
+y cuando vamos a la edicion del registro, vemos esta URL:
+
+http://127.0.0.1:8888/MyGwtMavenSampleApp.html?gwt.codesvr=127.0.0.1:9997#RoleFormPlace:51
+
+Con esto permite que haciendo back and forward con el browser nos mantenga los valores de los formularios, pero no así del listado (el o los items seleccionados) Es aqui donde encontramos un problema y por ahora no le dimos una solucion!!
+
+
 GWT - TableModel (modelos para las grillas, permitiendo obtener objetos tipados en lugar de Strings)
 
 GWT - SimplListModel (modelo para los combos, permitiendo obtener objetos tipados en lugar de Strings)
