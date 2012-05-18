@@ -87,6 +87,8 @@ GWT - TableModel (modelos para las grillas, permitiendo obtener objetos tipados 
 
 GWT - SimplListModel (modelo para los combos, permitiendo obtener objetos tipados en lugar de Strings)
 
+GWT - ListComboBox + SimplListModel + EntityToStringFormatter (para el manjeo de combos).
+
 GWT - Gwt-Dispatch (no se va a tener en cuenta)
 
 http://code.google.com/p/gwt-dispatch/wiki/GettingStarted
