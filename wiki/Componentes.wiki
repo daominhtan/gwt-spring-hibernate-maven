@@ -96,6 +96,12 @@ GWT - SimplListModel (modelo para los combos, permitiendo obtener objetos tipado
 
 GWT - ListComboBox + SimplListModel + EntityToStringFormatter (para el manejo de combos).
 
+URLs utiles para los combos y MVP:
+
+http://turbomanage.wordpress.com/2010/04/01/selectonelistbox-for-use-with-gwtmvp/
+
+https://gist.github.com/337159/3ec29ec0e41e7f554e876429262c0e2c8d0166b5
+
 ---------------------------------------------------------------------
 ---------------------------------------------------------------------
 
