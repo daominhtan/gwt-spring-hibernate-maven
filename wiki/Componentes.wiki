@@ -30,6 +30,9 @@ GWT - mvp4g (no se va a tener en cuenta)
 
 Ver:http://code.google.com/p/mvp4g/
 
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+
 GWT - Manejo del historial (clase History). Para esto se tendra una clase llamada AppController que sera la que escuchara los eventos del browser (atrás, adelante)
 
 GWT - Manejo del historial con estado de las paginas: (Place & activities) => Esto reemplaza al AppController que escucha los eventos del browser (no lo vamos a tener mas). Ademas la clase HandlerManager es reemplazada por la clase EventBus.
@@ -82,12 +85,19 @@ http://127.0.0.1:8888/MyGwtMavenSampleApp.html?gwt.codesvr=127.0.0.1:9997#RoleFo
 
 Con esto permite que haciendo back and forward con el browser nos mantenga los valores de los formularios, pero no así del listado (el o los items seleccionados) Es aqui donde encontramos un problema y por ahora no le dimos una solucion!!
 
+Conclusion: El tema del manejo del history en un principio se utilizo la clase History con una clase custom llamado AppController que escucha los eventos del browser, ademas se utilizo la clase HandlerManager como eventBus teniendo eventos que se disparaban para la navegacion de una pantalla a otro, lo cual me genero demasiados eventos que no aportaban demasiado. En reemplazo de esto, se utilizo el framework que trae a partir de la version 2.1 de gwt, activities and places, lo cual simplifica mucho el tema del history y la navegacion entre las paginas ya que no se dispararan mas eventos para cambiar de URL, sino que los eventos ahora semas mas por temas de negocio, como por ejemplo, se dispara el evento para la eliminacion de un rol de la aplicacion. Por otra parte este framework nos quedo medio chico a la hora de mantener el estado de las paginas (si bien para algunas no hubo problemas, para otras si, como por ejemplo, para mantener los filtros y elementos seleccionados de una pantalla de listado). Por otra parte, recomiendan utilizar el eventBus que trae el activity directamente.
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------
 
 GWT - TableModel (modelos para las grillas, permitiendo obtener objetos tipados en lugar de Strings)
 
 GWT - SimplListModel (modelo para los combos, permitiendo obtener objetos tipados en lugar de Strings)
 
-GWT - ListComboBox + SimplListModel + EntityToStringFormatter (para el manjeo de combos).
+GWT - ListComboBox + SimplListModel + EntityToStringFormatter (para el manejo de combos).
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------
 
 GWT - Gwt-Dispatch (no se va a tener en cuenta)
 
@@ -101,6 +111,11 @@ NOTA: Al final no me convence demasiado ya que no solo que vamos a tener muchas 
 Vi un ejemplo donde a los Handlers para un action y un result lo transforman a un BEAN de Spring para poder inyectarle el servicio y el handler queda como un pasamano a un service. Me parece mucho codigo para una simple llamada a un servicio. Mucho pasamano.
 
 Ver: https://bitbucket.org/gardellajuanpablo/gwt-sample/wiki/Home 
+
+Por un lado esta bueno, pero vamos a tener muchas clases y pasamamos, cuando en realidad lo podemos resolver directamente mediante un service de Spring.
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------
 
 GWT - FlexTable con paginacion:
 
@@ -146,6 +161,10 @@ Ver: http://groups.google.com/group/google-web-toolkit/browse_thread/thread/c6df
 Ver: http://groups.google.com/group/google-web-toolkit/browse_thread/thread/c5ede413a44b3737/b1ee110ccc3b9b1e?lnk=dice
 
 Manejar la seguridad a nivel de permisos en la aplicación y no a nivel de roles. Una buena practica es no harcodear los roles en la aplicación para que estos se puedan dar de alta dinamicamente. 
+
+Un tema oscuro de spring security con gwt es que no esta pensado 100%$ para aplicaciones JavaScripts-AJAX puras, donde gran parte de la lógica de presentación esta del lado cliente, ya que cuestan en ciertos puntos poder integrarlas a ambos de manera transparente. 
+Con un framework para la capa de presentación como JSF u Spring MVC seguramente resulte mas fácil su integración.
+Mas que nada porque nos topamos con problemas como por ejemplo, cuando spring security nos redirige al login form, por algun problema de authenticacion, dicho direccionamiento no termina saliendo por el browser y se termina viendo por consola del IDE de desarrollo. Esto es un claro ejemplo de como todavía estas dos tecnologías no están taaan emparentadas, donde dichos problemas se los tiene que resolver a mano.
 
 ---------------------------------------------------------------------
 ---------------------------------------------------------------------
