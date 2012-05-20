@@ -102,8 +102,19 @@ Vi un ejemplo donde a los Handlers para un action y un result lo transforman a u
 
 Ver: https://bitbucket.org/gardellajuanpablo/gwt-sample/wiki/Home 
 
-GWT - FlexTable con paginacion
+GWT - FlexTable con paginacion:
 
+Para el tema de la paginacion encontramos que a partir de la version 2.1 de GWT, encontramos con un nuevo widget llamado CellTable: "CellTable is one of the new widgets that supports pagination. Therefore, there no need to use PagingScrollTable in the gwt incubator or implementations in other third-party libraries".
+
+http://www.mytechtip.com/2010/11/gwt-celltable-example-using_8168.html
+
+http://gwt.google.com/samples/Showcase/Showcase.html#!CwCellTable
+
+http://learneverywhere.wordpress.com/java/gwt/pagination-in-gwt-cell-table/
+
+http://google-web-toolkit.googlecode.com/svn/javadoc/2.1/com/google/gwt/user/cellview/client/CellTable.html
+
+http://java-all-frameworks.blogspot.com.ar/2011/08/gwt-panels-widgets.html
 GWT - Usuario logueado en el HTML via SpringSecurity
 
 GWT - HTML (HOME con el header, el footer, el logout, etc)
