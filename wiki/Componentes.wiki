@@ -130,25 +130,29 @@ http://learneverywhere.wordpress.com/java/gwt/pagination-in-gwt-cell-table/
 http://google-web-toolkit.googlecode.com/svn/javadoc/2.1/com/google/gwt/user/cellview/client/CellTable.html
 
 http://java-all-frameworks.blogspot.com.ar/2011/08/gwt-panels-widgets.html
-GWT - Usuario logueado en el HTML via SpringSecurity
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------
 
 GWT - HTML (HOME con el header, el footer, el logout, etc)
 
 GWT - Popup generico que se lanze para los errores
 
-GWT - Link de logout con SpringSecurity
-
 GWT - Bloqueo de los botones luego de hacer un clic, para evitar que vaya N veces a la BD. Y volverlo a habilitar cuando el server de una respuesta.
-
-GWT & Spring security - que sucede si al hacer para atras o adelante desde el browser y la session expiro ?
-http://stackoverflow.com/questions/8957131/keeping-gwt-history-hashes-thru-spring-security-login
 
 GWT - Extender el AsyncCallback y armar uno generico con los mensajes de error correspondientes
 
 ---------------------------------------------------------------------
 ---------------------------------------------------------------------
 
-Spring Security: Para le manejo de la autenticacion y autorizacion.
+Spring Security: Para le manejo de la autenticacion y autorización.
+
+GWT - Link de logout con SpringSecurity
+
+GWT - Usuario logueado en el HTML via SpringSecurity
+
+GWT & Spring security - que sucede si al hacer para atras o adelante desde el browser y la session expiro ?
+http://stackoverflow.com/questions/8957131/keeping-gwt-history-hashes-thru-spring-security-login
 
 Ver: http://www.javacodegeeks.com/2010/12/securing-gwt-apps-with-spring-security.html
 
