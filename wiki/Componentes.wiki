@@ -142,6 +142,12 @@ http://java-all-frameworks.blogspot.com.ar/2011/08/gwt-panels-widgets.html
 ---------------------------------------------------------------------
 ---------------------------------------------------------------------
 
+GWT - Problemas con como recuperar los datos de un formulario. Se vuelve sincronica ya que el usuario debera ver todos los datos de una sin esperar que se le vayan completando los campos, filtros, etc..
+
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+
 GWT - HTML (HOME con el header, el footer, el logout, etc)
 
 GWT - Popup generico que se lanze para los errores
