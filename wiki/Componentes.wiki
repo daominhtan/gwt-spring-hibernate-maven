@@ -92,9 +92,9 @@ Conclusion: El tema del manejo del history en un principio se utilizo la clase H
 
 GWT - TableModel (modelos para las grillas, permitiendo obtener objetos tipados en lugar de Strings)
 
-GWT - SimplListModel (modelo para los combos, permitiendo obtener objetos tipados en lugar de Strings)
+GWT - SimplListModel (modelo para los combos, permitiendo obtener objetos tipados en lugar de Strings) Eso no se usaria ya que para los Combos se utilizaria directmante el SimpleListBox.
 
-GWT - ListComboBox + SimplListModel + EntityToStringFormatter (para el manejo de combos).
+GWT - SimpleListBox<T> extends ListBox: para el manejo de combos.
 
 URLs utiles para los combos y MVP:
 
