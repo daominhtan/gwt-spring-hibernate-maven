@@ -94,7 +94,9 @@ GWT - TableModel (modelos para las grillas, permitiendo obtener objetos tipados 
 
 GWT - SimplListModel (modelo para los combos, permitiendo obtener objetos tipados en lugar de Strings) Eso no se usaria ya que para los Combos se utilizaria directmante el SimpleListBox.
 
-GWT - SimpleListBox<T> extends ListBox: para el manejo de combos.
+GWT - SimpleListBox que extiende de ListBox: para el manejo de combos. Esto inlcuye un modelo de datos tipado e implementa una interface necesaria para poder integrara con el concepto de MVP ya que estos tipos de widgets no tienen una interface adecuada para agregarla al Display (interface de la vista requerida por MVP)
+
+"According to the Model-View-Presenter approach to GWT development, presenters should not know about specific Widgets in views, but rather call methods on interfaces like HasValue and HasClickHandlers. In practice, this works well with relatively simple widgets like TextBox whose behavior can be described to the presenter in terms of a single interface such as HasValue. However, GWT doesn’t yet provide suitable interfaces for all Widgets. One such example is the ListBox, which implements only HasChangeHandlers and HasName. Wouldn’t it be nice if there were a HasValue equivalent for ListBox that would let you get and set the selected value as well as populate the list?"
 
 URLs utiles para los combos y MVP:
 
