@@ -16,6 +16,11 @@ GWT - Mejores practicas
 
 Ver: http://www.google.com/intl/es-419/events/io/2009/sessions/GoogleWebToolkitBestPractices.html
 
+GWT - Antipatterns
+
+http://www.zackgrossbart.com/hackito/antiptrn-gwt/
+http://www.zackgrossbart.com/hackito/antiptrn-gwt2/
+
 GWT - MVP & Event Bus (clase HandlerManager)
 
 Ver: https://developers.google.com/web-toolkit/articles/mvp-architecture
