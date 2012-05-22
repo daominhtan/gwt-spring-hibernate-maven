@@ -167,9 +167,9 @@ GWT - Extender el AsyncCallback y armar uno generico con los mensajes de error c
 GWT & Hibernate -
 
 NO llevar las entities de JPA clientside: Lazy properties issue : when trying to send a partially loaded Hibernate POJO to the client-side of GWT (Javascript), the GWTcompiler throws a Serialization exception because it the CGLIB generated proxy does not belong to the JRE emulation.
-		 
+
 Type issue : Hibernate replaces some basic Java types with various subclassed implementation (such as java.sql.Timestamp instead of  java.util.Date or PersistentList for List collections).
-		 
+
 Javascript serialization of these classes will fail, since they do not belong to the JRE emulation supported by GWT 1.4 (note : the Java
 SQL dates are now supported by GWT 1.5)
 
