@@ -88,7 +88,7 @@ y cuando vamos a la edicion del registro, vemos esta URL:
 
 http://127.0.0.1:8888/MyGwtMavenSampleApp.html?gwt.codesvr=127.0.0.1:9997#RoleFormPlace:51
 
-Con esto permite que haciendo back and forward con el browser nos mantenga los valores de los formularios, pero no así del listado (el o los items seleccionados) Es aqui donde encontramos un problema y por ahora no le dimos una solucion!!
+Con esto permite que haciendo back and forward con el browser nos mantenga los valores de los formularios, pero no así del listado (el o los items seleccionados) Es aqui donde encontramos un problema y por ahora no le dimos una solucion!! (PENDIENTE => IMPORTANTE)
 
 Conclusion: El tema del manejo del history en un principio se utilizo la clase History con una clase custom llamado AppController que escucha los eventos del browser, ademas se utilizo la clase HandlerManager como eventBus teniendo eventos que se disparaban para la navegacion de una pantalla a otro, lo cual me genero demasiados eventos que no aportaban demasiado. En reemplazo de esto, se utilizo el framework que trae a partir de la version 2.1 de gwt, activities and places, lo cual simplifica mucho el tema del history y la navegacion entre las paginas ya que no se dispararan mas eventos para cambiar de URL, sino que los eventos ahora semas mas por temas de negocio, como por ejemplo, se dispara el evento para la eliminacion de un rol de la aplicacion. Por otra parte este framework nos quedo medio chico a la hora de mantener el estado de las paginas (si bien para algunas no hubo problemas, para otras si, como por ejemplo, para mantener los filtros y elementos seleccionados de una pantalla de listado). Por otra parte, recomiendan utilizar el eventBus que trae el activity directamente.
 
@@ -99,7 +99,7 @@ GWT - TableModel (modelos para las grillas, permitiendo obtener objetos tipados 
 
 GWT - SimplListModel (modelo para los combos, permitiendo obtener objetos tipados en lugar de Strings) Eso no se usaria ya que para los Combos se utilizaria directmante el SimpleListBox.
 
-GWT - SimpleListBox que extiende de ListBox: para el manejo de combos. Esto inlcuye un modelo de datos tipado e implementa una interface necesaria para poder integrara con el concepto de MVP ya que estos tipos de widgets no tienen una interface adecuada para agregarla al Display (interface de la vista requerida por MVP)
+GWT - SimpleListBox que extiende de ListBox: para el manejo de combos. Esto inlcuye un modelo de datos tipado e implementa una interface necesaria para poder integrara con el concepto de MVP ya que estos tipos de widgets no tienen una interface adecuada para agregarla al Display (interface de la vista requerida por MVP). Al final este componente lo deprecamos ya que se opto por hacer otro mucho mas simple extendiendo directamente de ListBox llamado SimpleListBox
 
 "According to the Model-View-Presenter approach to GWT development, presenters should not know about specific Widgets in views, but rather call methods on interfaces like HasValue and HasClickHandlers. In practice, this works well with relatively simple widgets like TextBox whose behavior can be described to the presenter in terms of a single interface such as HasValue. However, GWT doesn’t yet provide suitable interfaces for all Widgets. One such example is the ListBox, which implements only HasChangeHandlers and HasName. Wouldn’t it be nice if there were a HasValue equivalent for ListBox that would let you get and set the selected value as well as populate the list?"
 
@@ -149,11 +149,23 @@ http://java-all-frameworks.blogspot.com.ar/2011/08/gwt-panels-widgets.html
 
 GWT - Problemas con como recuperar los datos de un formulario. Se vuelve sincronica ya que el usuario debera ver todos los datos de una sin esperar que se le vayan completando los campos, filtros, etc..
 
+Para esto se opta por tener un método que se encargue de recuperar todos los datos de la pantalla de una devolviendo un objeto con varios atributos (ej retriveRoleListPage()).
 
 ---------------------------------------------------------------------
 ---------------------------------------------------------------------
 
-GWT - HTML (HOME con el header, el footer, el logout, etc)
+GWT - HTML (HOME con el header, menu, el footer, el logout, etc)
+
+MENU:
+
+A la hora de armar el menu, se nos presentaron dos problemas:
+
+1. Integrarlo a MVP: Lo cual se resolvió creando una clase custom que extiende de MenuItem e implemente una interface custom llamada HasCommand para luego hacer referencia a HasCommand en la vista (Display) y no al MenuItem directamente.
+
+2. Al agregar un nuevo DIV en el HTML donde se va a alojar el menu, se nos presento el problema de como manejarlo con Activities and Places ya que en el entryPoint de la App solo va a registrar un solo Place. Esto queda pendiente de resolver. (PENDIENTE => IMPORTANTE)
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------
 
 GWT - Popup generico que se lanze para los errores
 
