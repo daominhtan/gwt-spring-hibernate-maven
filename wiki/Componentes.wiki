@@ -162,7 +162,15 @@ A la hora de armar el menu, se nos presentaron dos problemas:
 
 1. Integrarlo a MVP: Lo cual se resolvió creando una clase custom que extiende de MenuItem e implemente una interface custom llamada HasCommand para luego hacer referencia a HasCommand en la vista (Display) y no al MenuItem directamente.
 
-2. Al agregar un nuevo DIV en el HTML donde se va a alojar el menu, se nos presento el problema de como manejarlo con Activities and Places ya que en el entryPoint de la App solo va a registrar un solo Place. Esto queda pendiente de resolver. (PENDIENTE => IMPORTANTE)
+2. Al agregar un nuevo DIV en el HTML donde se va a alojar el menu, se nos presento el problema de como manejarlo con Activities and Places ya que en el entryPoint de la App solo va a registrar un solo Place. Esto queda pendiente de resolver. 
+
+Este tema se resolvió agregando como único Place uno vació llamado HomePlace.java. Siguiendo la lógica de creación del ClientFactory, ActivityMapper y el PlaceHistoryHandler. Dicho Place estará vinculado con un SimplePanel vacio que sera el que se asocie al DIV del HOME
+
+Luego se agrego al DIV del MENU una nueva VIEW con su PRESENTER y ClientFactory creado previamente (para compartir el eventbus y el PlaceController)
+
+MenuView mainView = new MenuView();
+MenuPresenter mp = new MenuPresenter(mainView, clientFactory);
+RootPanel.get(MENU_DIV).add(mainView);
 
 ---------------------------------------------------------------------
 ---------------------------------------------------------------------
