@@ -166,7 +166,7 @@ A la hora de armar el menu, se nos presentaron dos problemas:
 
 Este tema se resolvió agregando como único Place uno vació llamado HomePlace.java. Siguiendo la lógica de creación del ClientFactory, ActivityMapper y el PlaceHistoryHandler. Dicho Place estará vinculado con un SimplePanel vacio que sera el que se asocie al DIV del HOME
 
-Luego se agrego al DIV del MENU una nueva VIEW con su PRESENTER y ClientFactory creado previamente (para compartir el eventbus y el PlaceController)
+Luego se agrego al DIV del MENU (HTML) una nueva VIEW con su PRESENTER y ClientFactory creado previamente (para compartir el eventbus y el PlaceController). Dicho vista y presentador no utilizan activity and places ya que no es necesario. Solo se respetara el patrón MVP.
 
 MenuView mainView = new MenuView();
 MenuPresenter mp = new MenuPresenter(mainView, clientFactory);
