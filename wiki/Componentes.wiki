@@ -130,7 +130,7 @@ Por un lado esta bueno, pero vamos a tener muchas clases y pasamamos, cuando en 
 ---------------------------------------------------------------------
 ---------------------------------------------------------------------
 
-GWT - FlexTable con paginacion:
+GWT - CellTable con paginacion (no usar FlexTable):
 
 Para el tema de la paginacion encontramos que a partir de la version 2.1 de GWT, encontramos con un nuevo widget llamado CellTable: "CellTable is one of the new widgets that supports pagination. Therefore, there no need to use PagingScrollTable in the gwt incubator or implementations in other third-party libraries".
 
@@ -143,6 +143,12 @@ http://learneverywhere.wordpress.com/java/gwt/pagination-in-gwt-cell-table/
 http://google-web-toolkit.googlecode.com/svn/javadoc/2.1/com/google/gwt/user/cellview/client/CellTable.html
 
 http://java-all-frameworks.blogspot.com.ar/2011/08/gwt-panels-widgets.html
+
+CellTable con MVP
+
+http://stackoverflow.com/questions/9751854/achieving-mvp-architecture-with-a-celltable
+
+http://stackoverflow.com/questions/6558476/how-to-expose-table-widget-to-presenter-in-mvp-pattern-with-gwt
 
 ---------------------------------------------------------------------
 ---------------------------------------------------------------------
