@@ -152,6 +152,31 @@ http://stackoverflow.com/questions/6558476/how-to-expose-table-widget-to-present
 
 ---------------------------------------------------------------------
 ---------------------------------------------------------------------
+QueryBuilder 
+
+Para el tema de la paginacion, vamos a necesitar una clase que se encargue de hacer el wrapper de la paginacion.
+Que tenga algo del estilo:
+
+query = em.createQuery(hql.toString());
+if (firstResult != null) {
+    query.setFirstResult(firstResult);
+}
+if (maxResults != null) {
+    query.setMaxResults(maxResults + 1); // Para saber si hay mÃ¡s registros en la base de datos.
+}
+for (String paramName : parameterMap.keySet()) {
+     query.setParameter(paramName, parameterMap.get(paramName));
+}
+return query;
+
+y algo del estilo:
+
+executeQueryWithCount(..)
+
+Q me devuelva tanto el listado como el COUNT del mismo. Util para la paginación y no tener que repetir en todos lados la misma lógica.
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------
 
 GWT - Problemas con como recuperar los datos de un formulario. Se vuelve sincronica ya que el usuario debera ver todos los datos de una sin esperar que se le vayan completando los campos, filtros, etc..
 
