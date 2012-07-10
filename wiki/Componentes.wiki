@@ -154,6 +154,14 @@ http://stackoverflow.com/questions/9751854/achieving-mvp-architecture-with-a-cel
 
 http://stackoverflow.com/questions/6558476/how-to-expose-table-widget-to-presenter-in-mvp-pattern-with-gwt
 
+
+BUG del componente a la hora de paginar (no mostraba bien el ultimo resultado):
+
+
+http://stackoverflow.com/questions/7240871/celltable-paging-with-simplepager
+
+https://groups.google.com/forum/?fromgroups#!topic/google-web-toolkit/RedwgreWKB0
+
 ---------------------------------------------------------------------
 ---------------------------------------------------------------------
 QueryBuilder 
