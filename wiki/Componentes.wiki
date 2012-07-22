@@ -166,6 +166,9 @@ Para corregir este BUG que trae el componente (por lo menos en la version de gwt
 
 Igualmente cuando lo sobreescribimos, nos queda un bug que a la hora de completarse el tope de registros por pagina (por ejemplo, tenemos 3 registros listados cuando el limite por pagina para la paginacion es de 3) presionamos siguiente y nos lleva a la siguiente pagina sin ningun sentido y sin valores algunos. Esto no ocurre cuando en la pagina no se llega a dicho tope de registros.
 
+Otro problema que se nos presento es que a la hora de realizar una selección multiple con el checkbox e ir paginando (saltando de una pagina a otra), si bien te mantiene los registros seleccionados (lo cual esta bueno), no los visualiza (no te los muestra seleccionados), con lo cual uno se piensa q no estan seleccionados, pero en realidad si. Aca hay que darle una vuelta de tuerca. 
+
+
 ---------------------------------------------------------------------
 ---------------------------------------------------------------------
 QueryBuilder 
