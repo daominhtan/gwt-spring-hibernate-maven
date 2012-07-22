@@ -171,6 +171,15 @@ Otro problema que se nos presento es que a la hora de realizar una selección mu
 http://stackoverflow.com/questions/8329855/gwt-remember-state-of-checkboxes-after-rangechangeevent-sent-to-table
 
 
+En conclusión, nos quedaron dos problemas por solucionar:
+
+1. Problema que surge al hacer clic en el boton next cuando tenemos la cantidad de registros igual al maximo por pagina (es decir, si la cantidad max por pagina son 10 registros y solo se tienen 10 registros, nos va a dejar presionar next - por mas q este disabled)
+
+2. Problema con el SELECT ALL cuando paginamos:
+
+https://groups.google.com/forum/?fromgroups#!topic/google-web-toolkit/VvVRO3Cc0EE
+
+
 ---------------------------------------------------------------------
 ---------------------------------------------------------------------
 QueryBuilder 
