@@ -162,6 +162,10 @@ http://stackoverflow.com/questions/7240871/celltable-paging-with-simplepager
 
 https://groups.google.com/forum/?fromgroups#!topic/google-web-toolkit/RedwgreWKB0
 
+Para corregir este BUG que trae el componente (por lo menos en la version de gwt 2.1.1) tendremos que sobreescribir en la vista el SimplePager que trae por defecto, ya que trula a la hora de obtener el start y end para lograr efectivamente la paginacion.
+
+Igualmente cuando lo sobreescribimos, nos queda un bug que a la hora de completarse el tope de registros por pagina (por ejemplo, tenemos 3 registros listados cuando el limite por pagina para la paginacion es de 3) presionamos siguiente y nos lleva a la siguiente pagina sin ningun sentido y sin valores algunos. Esto no ocurre cuando en la pagina no se llega a dicho tope de registros.
+
 ---------------------------------------------------------------------
 ---------------------------------------------------------------------
 QueryBuilder 
